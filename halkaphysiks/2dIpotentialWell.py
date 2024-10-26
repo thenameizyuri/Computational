@@ -7,18 +7,18 @@ Ly = 1.0  # Width in the y-direction (m)
 nx_states = 2  # Number of states in the x-direction
 ny_states = 2  # Number of states in the y-direction
 
-# Position values
+#position values
 x = np.linspace(0, Lx, 100)
 y = np.linspace(0, Ly, 100)
 X, Y = np.meshgrid(x, y)
 
-# Function to calculate the wave function
+# function to calculate the wave function
 def wave_function_2d(nx, ny, X, Y, Lx, Ly):
     psi_x = np.sqrt(2 / Lx) * np.sin(nx * np.pi * X / Lx)
     psi_y = np.sqrt(2 / Ly) * np.sin(ny * np.pi * Y / Ly)
     return psi_x * psi_y
 
-#plot the probability densities of the first few states
+#plotting the probability densities of the first few states
 fig, axs = plt.subplots(nx_states, ny_states, figsize=(12, 12))
 fig.suptitle('_', fontsize=16)
 
