@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 # Parameters
 omega = 2.0  # Natural frequency
-gamma = 0.1  # Damping coefficient
-t_max = 20.0  # Total time
+gamma = 1  # Damping coefficient
+t_max = 100.0  # Total time
 dt = 0.01  # Time step
 
 # Initial conditions

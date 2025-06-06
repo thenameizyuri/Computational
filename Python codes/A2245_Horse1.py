@@ -112,3 +112,13 @@ plt.show()
 print(f"Fitted parameters:")
 print(f"beta = {beta_fit:.3e} (infection rate)")
 print(f"b = {b_fit:.1f} (virus production rate)")
+
+
+
+
+
+
+
+
+
+
